@@ -1,0 +1,155 @@
+*{
+  font-family: "poppins";
+}
+body{
+  background-color: rgb(124, 189, 168);
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center;
+  background-color:goldenrod;
+  width: 50%;
+  height: 80%;
+  margin-top: 50px;
+  margin-left: 30%;
+  margin-right: 50%;
+  border-radius: 10px;
+}
+
+#input-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+ 
+}
+
+input{
+  width: 204px;
+  margin-bottom: 15px;
+  text-align: center;
+  /* border-radius: 3px; */
+  border: 1px solid black;
+}
+textarea{
+  text-align: center;
+  width: 206px;
+  border-radius: 3px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+ button{
+  background-color:grey;
+  font-family: "poppins";
+  font-size: 15px;
+  font-weight: 600;
+  width: 150px;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin: 20px auto;
+
+
+ }
+
+ /* #add-todo{
+  display: flex;
+  justify-content: center;
+
+ } */
+
+
+ .input-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style-type: none;
+}
+
+.item {
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  align-items: center;
+  border-bottom: solid 1px white;
+  margin-bottom: 20px;
+  
+}
+
+
+.delete {
+  color: red;
+  flex: 0;
+  /* flex-grow:1 ; */
+  /* width: 200px; */
+  /* background: transparent; */
+  transition: .2s ease-in-out 0s;
+  
+}
+
+.edit{
+    flex: 0;
+    transition: .2s ease-in-out 0s;
+    margin-left: 40%;
+    
+}
+
+.edit:hover, .delete:hover{
+    box-shadow: 0 0 10px #ccc;
+    transform: scale(1.2);
+    border-radius: 15px;
+}
+
+li {
+    flex: 2;
+  font-size: 1.2rem;
+  /* padding: 1rem; */
+  list-style: none;
+  width: auto;
+}
+
+.done{
+    text-decoration: line-through;
+    color: red;
+    opacity: 0.4;
+}
+
+input, textarea {
+  /* display: block; */
+/* flex: 1 2 auto; */
+width: 100%;
+border-radius: 0.2rem;
+border: 1px solid #ccc;
+/* border-radius: 13px; */
+padding: 0.1rem 3rem;
+/* height: 100%; */
+}
+
+input[type="text"]:focus, textarea:focus {
+outline: none;
+box-shadow: 0 0 4px #ccc;
+}
+
+input[type="text"]:hover, textarea:hover {
+box-shadow: 0 0 4px #ccc;
+}
+
+input,
+input::-webkit-input-placeholder, textarea {
+font-size: 1rem;
+line-height: 3;
+}
+
+ul{
+ background-color: chocolate;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ width: 80%;
+}
